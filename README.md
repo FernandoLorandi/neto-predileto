@@ -1,54 +1,76 @@
-# React + TypeScript + Vite
+# Neto Predileto
+Projeto para conectar famílias a acompanhantes para idosos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Requisitos
 
-Currently, two official plugins are available:
+- Node.js (versão recomendada: 18 ou superior)
+- npm (vem com o Node.js)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalação
 
-## Expanding the ESLint configuration
+Clone o repositório e instale as dependências:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone [url-do-repositorio]
+cd [nome-do-diretorio]
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Desenvolvimento
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Para iniciar o servidor de desenvolvimento:
+
+```bash
+npm run dev
 ```
+
+O servidor iniciará em `http://localhost:3000` (ou outra porta, caso esta esteja ocupada).
+
+### Construção (Build)
+
+Para criar uma versão otimizada para produção:
+
+```bash
+npm run build
+```
+
+Os arquivos serão gerados no diretório `dist/`.
+
+### Visualizar build localmente
+
+Para testar a build de produção localmente:
+
+```bash
+npm run preview
+```
+
+### Linting
+
+Para verificar problemas no código:
+
+```bash
+npm run lint
+```
+
+### Testes
+
+Para executar os testes:
+
+```bash
+npm test
+```
+
+### Tecnologias principais
+
+- React
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+- Magic UI
+
+### Estrutura do projeto
+
+- `src/` - Código fonte do projeto
+    - `components/` - Componentes React
+    - `assets/` - Imagens e outros recursos estáticos
