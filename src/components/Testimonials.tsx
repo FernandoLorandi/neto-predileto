@@ -31,7 +31,7 @@ const Testimonials = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="text-center space-y-6 mb-16">
                     <h2 className="text-4xl lg:text-5xl font-bold text-gray-800">
-                        Histórias que <span className="text-orange-600">Aquecem o Coração</span>
+                        Histórias que <span className="text-orange-600">aquecem o coração</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Cada sorriso, cada momento especial compartilhado. Veja como nossos "Netos"
@@ -66,32 +66,6 @@ const Testimonials = () => {
                             </CardContent>
                         </Card>
                     ))}
-                </div>
-
-                <div className="mt-16 text-center">
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-white">
-                        <h3 className="text-3xl font-bold mb-4">
-                            Mais de 100 famílias já confiam em nós
-                        </h3>
-                        <p className="text-xl opacity-90 mb-8">
-                            Junte-se às famílias de Ponta Grossa que escolheram o carinho e a segurança
-                            do Neto Predileto para cuidar de quem mais amam.
-                        </p>
-                        <div className="flex justify-center items-center gap-8 text-lg">
-                            <div>
-                                <div className="text-3xl font-bold">98%</div>
-                                <div className="opacity-90">Satisfação</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold">24h</div>
-                                <div className="opacity-90">Disponibilidade</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold">100%</div>
-                                <div className="opacity-90">Verificados</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

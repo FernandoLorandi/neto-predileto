@@ -11,6 +11,7 @@ const Hero = () => {
         }
     };
 
+
     return (
         <section className="relative py-20 lg:py-32 px-4 overflow-hidden" id="hero">
             {/* Background decorative elements */}
@@ -29,10 +30,9 @@ const Hero = () => {
                             </Badge>
 
                             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                                Companhia e cuidado para{" "}
-                                <AuroraText> idosos </AuroraText>
-                                {" "}
-                                com carinho
+                                Cuidado e companhia para{" "}
+                                <AuroraText>idosos</AuroraText>
+                                , com todo o carinho.
                             </h1>
 
                             <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
@@ -66,7 +66,7 @@ const Hero = () => {
                                 onClick={() => scrollToSection("contato")}
                             >
                                 <Phone className="w-5 h-5 mr-2" />
-                                Solicitar Atendimento
+                                Quero meu orçamento
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Button>
 
@@ -74,9 +74,8 @@ const Hero = () => {
                                 variant="outline"
                                 size="lg"
                                 className="border-2 border-orange-200 text-orange-700 hover:bg-orange-50 text-lg px-8 py-6"
-                                onClick={() => scrollToSection("planos")}
                             >
-                                Ver Nossos Planos
+                                Seja um profissional
                             </Button>
                         </div>
 
@@ -88,35 +87,10 @@ const Hero = () => {
                     </div>
 
                     {/* Image/Visual */}
-                    <div className="relative">
+                    <div className="relative hidden lg:block">
                         <div className="bg-gradient-to-br from-blue-100 to-orange-100 rounded-3xl p-8 lg:p-12">
-                            <div className="bg-white rounded-2xl p-8 shadow-lg">
-                                <div className="text-center space-y-6">
-                                    <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-orange-500 rounded-full mx-auto flex items-center justify-center">
-                                        <Heart className="w-12 h-12 text-white" />
-                                    </div>
-
-                                    <div className="space-y-3">
-                                        <h3 className="text-2xl font-bold text-gray-800">
-                                            Nossos "Netos"
-                                        </h3>
-                                        <p className="text-gray-600">
-                                            Acompanhantes especiais que tratam seus entes queridos
-                                            com o mesmo carinho de um neto verdadeiro.
-                                        </p>
-                                    </div>
-
-                                    <div className="grid grid-cols-2 gap-4 pt-4">
-                                        <div className="text-center">
-                                            <div className="text-2xl font-bold text-blue-600">100%</div>
-                                            <div className="text-sm text-gray-500">Verificados</div>
-                                        </div>
-                                        <div className="text-center">
-                                            <div className="text-2xl font-bold text-orange-600">24h</div>
-                                            <div className="text-sm text-gray-500">Disponível</div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="bg-white rounded-2xl shadow-lg">
+                                <img src="src/assets/imagem_hero.jpg"  alt="Imagem de um idoso feliz com seu acompanhante" className="w-full h-auto rounded-lg" />
                             </div>
                         </div>
 

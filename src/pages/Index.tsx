@@ -5,7 +5,7 @@ import Contact from "@/components/Contact.tsx";
 import About from "@/components/About.tsx";
 import Services from "@/components/Services.tsx";
 import Testimonials from "@/components/Testimonials.tsx";
-import Pricing from "@/components/Pricing.tsx";
+import HowItWorks from "@/components/HowWorks.tsx";
 
 const Index = () => {
     return (
@@ -14,9 +14,9 @@ const Index = () => {
             <div className="pt-16"> {/* Add padding-top to account for fixed header */}
                 <Hero />
                 <About />
+                <HowItWorks />
                 <Services />
                 <Testimonials />
-                <Pricing />
                 <Contact />
                 <Footer />
             </div>

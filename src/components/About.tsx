@@ -52,13 +52,6 @@ const About = () => {
                     ))}
                 </div>
 
-                <div className="mt-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-white text-center">
-                    <h3 className="text-3xl font-bold mb-4">22.000 idosos em Ponta Grossa</h3>
-                    <p className="text-xl opacity-90 max-w-2xl mx-auto">
-                        Uma população que cresce e merece atenção especial. Estamos aquí para fazer a diferença
-                        na vida de cada família da nossa cidade.
-                    </p>
-                </div>
             </div>
         </section>
     );

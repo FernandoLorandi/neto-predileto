@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-16 px-4">
             <div className="max-w-6xl mx-auto">
-                <div className="grid md:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-3 gap-8">
                     <div className="space-y-6">
                         <div className="space-y-4">
                             <h3 className="text-2xl font-bold">
@@ -35,26 +35,15 @@ const Footer = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-lg font-semibold">Planos</h4>
-                        <ul className="space-y-2 text-gray-300">
-                            <li>Básico - R$ 500/mês</li>
-                            <li>Intermediário - R$ 1.200/mês</li>
-                            <li>Intensivo - R$ 2.200/mês</li>
-                            <li>Atendimento Avulso</li>
-                            <li>Pacotes Personalizados</li>
-                        </ul>
-                    </div>
-
-                    <div className="space-y-4">
                         <h4 className="text-lg font-semibold">Contato</h4>
                         <div className="space-y-3 text-gray-300">
                             <div className="flex items-center gap-3">
                                 <Phone className="w-4 h-4 text-orange-400" />
-                                <span>(42) 99999-9999</span>
+                                <span>(42) 99936-3576</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail className="w-4 h-4 text-orange-400" />
-                                <span>contato@netopredileto.com.br</span>
+                                <span>netoprediletopg@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <MapPin className="w-4 h-4 text-orange-400" />
