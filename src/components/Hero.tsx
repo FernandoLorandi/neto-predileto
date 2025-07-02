@@ -11,6 +11,11 @@ const Hero = () => {
         }
     };
 
+    const handlePartnerClick = () => {
+        const url = "https://forms.gle/y2NZmWSdmhHpJZv28"
+        window.open(url, '_blank');
+    }
+
 
     return (
         <section className="relative py-20 lg:py-32 px-4 overflow-hidden" id="hero">
@@ -71,6 +76,7 @@ const Hero = () => {
                             </Button>
 
                             <Button
+                                onClick={handlePartnerClick}
                                 variant="outline"
                                 size="lg"
                                 className="border-2 border-orange-200 text-orange-700 hover:bg-orange-50 text-lg px-8 py-6"

@@ -35,6 +35,7 @@ const HowItWorks = () => {
         window.open(whatsappUrl, '_blank');
     };
 
+
     return (
         <section className="py-24 px-4 bg-white" id="funcionamento">
             <div className="max-w-6xl mx-auto">

@@ -13,6 +13,12 @@ const Header = () => {
         }
     };
 
+    const handlePartnerClick = () => {
+        const url = "https://forms.gle/y2NZmWSdmhHpJZv28"
+        window.open(url, '_blank');
+    }
+
+
     const navLinks = [
         { label: "Início", href: "#hero" },
         { label: "Sobre", href: "#sobre" },
@@ -53,6 +59,7 @@ const Header = () => {
                     {/* Desktop CTA Buttons */}
                     <div className="hidden md:flex items-center space-x-4">
                         <Button
+                            onClick={handlePartnerClick}
                             variant="outline"
                             className="border-orange-200 text-orange-600 hover:bg-orange-50"
                         >
@@ -94,6 +101,7 @@ const Header = () => {
                             ))}
                             <div className="pt-4 space-y-3">
                                 <Button
+                                    onClick={handlePartnerClick}
                                     variant="outline"
                                     className="w-full border-orange-200 text-orange-600 hover:bg-orange-50"
                                 >
